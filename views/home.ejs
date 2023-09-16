@@ -7,22 +7,19 @@
       }
     </style>
     
-    <!-- ... -->
-    
+
     <p class="formatted-paragraph"><%= startingContent %></p>
+
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
     
-
-
-  <%  posts.forEach(function(post){ %>
+    <%  posts.forEach(function(post){ %>
 
     <h1><%=post.title%></h1>
     <p>
     <%=post.content.substring(0, 100) + " ..."%>
-    <a href="/posts/<%=post.title%>">Read More</a>
+    <a href="/posts/<%=post._id%>">Read More</a>
     </p>
 
-
     <% }) %>
-
 
 <%- include("partials/footer"); -%>
