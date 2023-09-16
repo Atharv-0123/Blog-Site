@@ -52,3 +52,7 @@ html {
   background-color: #e0e0e0; /* Change background color on hover */
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
+
+.formatted-paragraph {
+  white-space: pre-line;
+}

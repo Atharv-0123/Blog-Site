@@ -1,0 +1,11 @@
+<%- include("partials/header"); -%>
+
+<div class="paragraph-container">
+    <h1><%=post.title%></h1>
+    <p>
+        <%=post.content%>
+    </p>
+    <a href="/view_post/<%=post._id%>"></a>
+</div>
+
+<%- include("partials/footer"); -%>

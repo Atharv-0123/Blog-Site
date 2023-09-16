@@ -1,0 +1,18 @@
+<!-- posts.ejs -->
+<%- include("partials/header"); -%>
+
+<h1>All Posts</h1>
+
+<ul>
+  <% posts.forEach(function(post){ %>
+    <li>
+      <h2><%= post.title %></h2>
+      <p><%= post.content.substring(0, 100) + " ..." %></p>
+      <a href="/view_post/<%= post._id %>">View</a>
+      <a href="/edit/<%= post._id %>">Edit</a>
+      <a href="/delete/<%= post._id %>">Delete</a>
+    </li>
+  <% }) %>
+</ul>
+
+<%- include("partials/footer"); -%>

@@ -1,13 +1,7 @@
 
 <%- include("partials/header"); -%>
     <h1>Home</h1>
-    <style>
-      .formatted-paragraph {
-        white-space: pre-line;
-      }
-    </style>
     
-
     <p class="formatted-paragraph"><%= startingContent %></p>
 
     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
@@ -17,7 +11,7 @@
     <h1><%=post.title%></h1>
     <p>
     <%=post.content.substring(0, 100) + " ..."%>
-    <a href="/posts/<%=post._id%>">Read More</a>
+    <a href="/view_post/<%=post._id%>">Read More</a>
     </p>
 
     <% }) %>
