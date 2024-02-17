@@ -8,3 +8,7 @@ node_modules/
 *.log
 
 Dockerfile
+
+package-lock.json
+
+package.json
