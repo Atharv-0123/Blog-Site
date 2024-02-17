@@ -30,7 +30,11 @@ Happy reading,
 Atharva
 `;
 
-const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices.";
+const contactContent = `
+Atharva Khangar 
+atharvak866@gmail.com 
+https://github.com/Atharv-0123
+`;
 
 const app = express();
 
